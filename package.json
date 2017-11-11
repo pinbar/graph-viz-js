@@ -1,0 +1,17 @@
+{
+  "name": "graph-viz-js",
+  "version": "1.0.0",
+  "description": "Visualization for graph data using SigmaJS",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PinBar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

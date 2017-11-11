@@ -1,0 +1,74 @@
+{
+  "result": {
+    "graph": {
+      "vertices": [
+        {
+          "id": "n0",
+          "label": "A",
+          "properties": {
+            "name": [
+              {
+                "value": "first node"
+              }
+            ]
+          }
+        },
+        {
+          "id": "n1",
+          "label": "B",
+          "properties": {
+            "name": [
+              {
+                "value": "second node"
+              }
+            ]
+          }
+        },
+        {
+          "id": "n3",
+          "label": "D",
+          "properties": {
+            "name": [
+              {
+                "value": "fourth node"
+              }
+            ]
+          }
+        },
+        {
+          "id": "n2",
+          "label": "C",
+          "properties": {
+            "name": [
+              {
+                "value": "third node"
+              }
+            ]
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "e0",
+          "outV": "n0",
+          "inV": "n1"
+        },
+        {
+          "id": "e1",
+          "outV": "n1",
+          "inV": "n2"
+        },
+        {
+          "id": "e2",
+          "outV": "n2",
+          "inV": "n0"
+        },
+        {
+          "id": "e3",
+          "outV": "n2",
+          "inV": "n3"
+        }
+      ]
+    }
+  }
+}

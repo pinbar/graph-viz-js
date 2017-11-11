@@ -1,0 +1,11 @@
+#container {
+    /* max-width: 1200px; */
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    top: 20%;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }

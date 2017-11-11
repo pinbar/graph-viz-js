@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="container"></div>
+    <script src="lib/jquery.3.2.1.min.js"></script>
+    <script src="lib/sigma.1.2.1.min.js"></script>
+    <script src="graph.js"></script>
+    <script>
+        $.get("/data", function (data, status) {
+            draw(data);
+        });
+    </script>
+</body>
+
+</html>

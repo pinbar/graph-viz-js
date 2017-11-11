@@ -1,0 +1,34 @@
+# Project
+.project
+.settings
+.vscode
+
+# Dependencies
+node_modules/
+
+# Coverage Reports
+reports/
+
+# Data
+data/graph.*.json
+data/dse.studio.output.simple.png
+
+# Logs
+logs
+
+# mac stuff
+.DS_Store
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
