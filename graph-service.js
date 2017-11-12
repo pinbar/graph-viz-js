@@ -6,7 +6,7 @@ module.exports = {
     getGraphData: function getGraphData() {
         var dseData = loadJSON();
         var data = convertDSEToSigmaFmt(dseData);
-        return data;
+        return {data: data, colors: colorUtil.getLegend()};
     }
 }
 

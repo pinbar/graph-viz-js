@@ -5,14 +5,34 @@
 </head>
 
 <body>
+    <div id="header">Graph Visualization</div>
+    <hr>
     <div id="container"></div>
+    <hr>
+    <div id="footer"></div>
     <script src="lib/jquery.3.2.1.min.js"></script>
     <script src="lib/sigma.1.2.1.min.js"></script>
     <script src="graph.js"></script>
     <script>
-        $.get("/data", function (data, status) {
-            draw(data);
+        $.get("/data", function (response, status) {
+            draw(response.data);
+            showLegend(response.colors);
         });
+
+        function showLegend(respColors){
+            var colors = $.parseJSON(respColors);
+            var color, type = "";
+            $('#footer').append("<strong>Legend: &nbsp; </strong>");
+            $.each(colors, function (index, value) {
+                value = ''+value;
+                color = value.substring(value.indexOf(",")+1);
+                nodeType = value.substring(0, value.indexOf(","));
+                $('#footer').append('<div style="color:'+color+'">'+nodeType+'</div>');
+                if(index != colors.length-1) {
+                    $('#footer').append("&nbsp;|&nbsp;");
+                }
+            });
+        }
     </script>
 </body>
 
